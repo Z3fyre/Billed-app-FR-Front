@@ -25,7 +25,7 @@ describe('Given I am connected as an employee', () => {
       );
     });
     test('Then envelope icon in vertical layout should be highlighted', async () => {
-      // it's necessary to simulate router because vertical layout isn't on NewBillUI
+      //  necessary to simulate router because vertical layout isn't on NewBillUI
       const root = document.createElement('div');
       root.setAttribute('id', 'root');
       document.body.append(root);
@@ -97,10 +97,10 @@ describe('Given I am connected as an employee', () => {
     describe('When I click on submit button', () => {
       describe('When datas are valid', () => {
         test('Then the handleSubmit should be called and navigate to bills page', async () => {
-          // It is not possible to test the validity of the data,
+          //  not possible to test the validity of the data,
           // as the submit is intercepted by the validator on the html
-          // side with the required.
-          // The data should have been validated in the submit function for permitted testing.
+          // side.
+          // The data should have been validated in the submit function to allow testing.
           const onNavigate = (pathname) => {
             document.body.innerHTML = ROUTES({ pathname });
           };

@@ -48,7 +48,7 @@ describe('Given I am a user connected as an employee', () => {
       );
     });
     test('Then bill icon in vertical layout should be highlighted', async () => {
-      // it's necessary to simulate router because vertical layout isn't on BillsUI
+      //  necessary to simulate router because vertical layout isn't on BillsUI
       const root = document.createElement('div');
       root.setAttribute('id', 'root');
       document.body.append(root);
